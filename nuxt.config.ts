@@ -8,5 +8,10 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt'
   ],
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+  vite: {
+    optimizeDeps: {
+      include: ['pinia']
+    }
+  }
 })
