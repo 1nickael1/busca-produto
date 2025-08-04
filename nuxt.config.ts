@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt'
   ],
+  pinia: {
+    storesDirs: ['./stores/*'],
+  },
   css: ['~/assets/css/main.css'],
   vite: {
     build: {
