@@ -8,15 +8,5 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt'
   ],
-  css: ['~/assets/css/main.css'],
-  vite: {
-    optimizeDeps: {
-      include: ['pinia']
-    },
-    build: {
-      rollupOptions: {
-        external: ['pinia']
-      }
-    }
-  }
+  css: ['~/assets/css/main.css']
 })
