@@ -12,6 +12,11 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       include: ['pinia']
+    },
+    build: {
+      rollupOptions: {
+        external: ['pinia']
+      }
     }
   }
 })
