@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* Cursor pointer para todos os botões - com alta especificidade */
+html body button,
+html body [role="button"],
+html body .u-button,
+html body [data-variant],
+html body [data-variant="solid"],
+html body [data-variant="outline"],
+html body [data-variant="ghost"],
+html body [data-variant="soft"],
+html body [data-variant="link"] {
+  cursor: pointer !important;
+}
+
+/* Cursor pointer para elementos específicos do Nuxt UI */
+html body .u-button,
+html body .u-button-base,
+html body .u-button-group,
+html body .u-button-group button {
+  cursor: pointer !important;
+}
+
+/* Cursor pointer para todos os elementos clicáveis */
+html body button,
+html body input[type="button"],
+html body input[type="submit"],
+html body input[type="reset"],
+html body [role="button"],
+html body [tabindex]:not([tabindex="-1"]) {
+  cursor: pointer !important;
+}
+
+/* Cursor pointer para elementos com classes específicas do Nuxt UI */
+html body [class*="u-button"],
+html body [class*="button"] {
+  cursor: pointer !important;
+} 
